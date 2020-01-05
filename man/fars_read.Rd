@@ -21,13 +21,7 @@ A data frame with data stored from the csv file, or an error if the file does no
 \code{fars_read} import the fars file with the directory as argument.
 }
 \examples{
-require(readr)
-require(dplyr)
-setwd(system.file("extdata", package = "FARS"))
-
-dat <- year \%>\%
-    make_filename \%>\%
-    fars_read
+dat <- fars_read("accident_2013.csv.bz2")
 
 }
 \seealso{

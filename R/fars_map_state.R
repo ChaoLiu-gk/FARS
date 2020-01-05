@@ -21,7 +21,6 @@
 #' \href{*Fatality Analysis Reporting System*}{https://www.nhtsa.gov/Data/Fatality-Analysis-Reporting-System-(FARS)}
 #'
 #' @examples
-#' setwd(system.file("extdata", package = "FARS"))
 #' fars_map_state(state.num = 30, year = 2013)
 #'
 #' @export

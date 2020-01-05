@@ -12,13 +12,7 @@
 #' @return A data frame with data stored from the csv file, or an error if the file does not exist.
 #'
 #' @examples
-#' require(readr)
-#' require(dplyr)
-#' setwd(system.file("extdata", package = "FARS"))
-#'
-#' dat <- year %>%
-#'     make_filename %>%
-#'     fars_read
+#' dat <- fars_read("accident_2013.csv.bz2")
 #'
 #' @importFrom readr read_csv
 #' @importFrom dplyr tbl_df
@@ -29,10 +23,12 @@
 
 fars_read <- function(filename) {
 
-    if(!file.exists(filename))
+    filedir <- system.file("extdata", filename, package = "FARS")
+
+    if(!file.exists(filedir))
         stop("file '", filename, "' does not exist")
     data <- suppressMessages({
-        readr::read_csv(filename, progress = FALSE)
+        readr::read_csv(filedir, progress = FALSE)
     })
     dplyr::tbl_df(data)
 
