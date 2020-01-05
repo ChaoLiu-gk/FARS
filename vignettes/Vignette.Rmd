@@ -71,6 +71,6 @@ df_sum
 ### Function `fars_map_state`
 
 ```{r}
-plot(fars_map_state(25, 2013))
+fars_map_state(state.num = 30, year = 2013)
 ```
 
