@@ -2,13 +2,12 @@ testthat::context("file naming and import")
 
 library(FARS)
 
-setwd(system.file("extdata", package = "FARS"))
 
 test_that("FARS csv files are available", {
-    expect_that(list.files(system.file("extdata", package = "FARS")),
-                equals(c("accident_2013.csv.bz2",
-                         "accident_2014.csv.bz2",
-                         "accident_2015.csv.bz2")))
+    expect_equal(list.files(system.file("extdata", package = "FARS")),
+                c("accident_2013.csv.bz2",
+                  "accident_2014.csv.bz2",
+                  "accident_2015.csv.bz2"))
     }
 )
 
