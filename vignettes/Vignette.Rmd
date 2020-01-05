@@ -14,8 +14,6 @@ knitr::opts_chunk$set(
   collapse = TRUE,
   comment = "#>"
 )
-# Set working directory to extdata
-knitr::opts_knit$set(root.dir = system.file("extdata", package = "FARS"))
 ```
 
 # Package Description

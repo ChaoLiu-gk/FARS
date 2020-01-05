@@ -21,7 +21,6 @@ the function will return a message \code{no accidents to plot}.
 to the map.
 }
 \examples{
-setwd(system.file("extdata", package = "FARS"))
 fars_map_state(state.num = 30, year = 2013)
 
 }
