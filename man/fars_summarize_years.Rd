@@ -14,7 +14,8 @@ fars_summarize_years(years)
 each month in different years
 }
 \examples{
-fars_summarize_year\code{c(2013, 2014, 2015)}
+setwd(system.file("extdata", package = "FARS"))
+fars_summarize_year(2013:2015)
 
 }
 \seealso{

@@ -16,6 +16,7 @@ A list of \code{month} under specific \code{year} for all input \code{years}, or
 Return \code{month} column at each year
 }
 \examples{
+setwd(system.file("extdata", package = "FARS"))
 dat_list <- fars_read_years(c(2013, 2014, 2015))
 
 }

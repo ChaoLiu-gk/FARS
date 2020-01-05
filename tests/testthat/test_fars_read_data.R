@@ -1,6 +1,8 @@
-context("file naming and import")
+testthat::context("file naming and import")
 
 library(FARS)
+
+setwd(system.file("extdata", package = "FARS"))
 
 test_that("FARS csv files are available", {
     expect_that(list.files(system.file("extdata", package = "FARS")),
@@ -19,8 +21,8 @@ test_that("make_filename function", {
 
 test_that("fars_read function", {
 
-    expect_that(fars_read(system.file("extdata", "accident_2013.csv.bz2", package = "FARS")), is_a("data.frame"))
+    expect_that(fars_read("accident_2013.csv.bz2"), is_a("data.frame"))
 
-    expect_that(fars_read(system.file("extdata", "accident_2012.csv.bz2", package = "FARS")), throws_error("file 'accident_2012.csv.bz2' does not exist"))
+    expect_that(fars_read("accident_2012.csv.bz2"), throws_error("file 'accident_2012.csv.bz2' does not exist"))
 
 })

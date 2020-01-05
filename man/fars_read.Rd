@@ -23,6 +23,7 @@ A data frame with data stored from the csv file, or an error if the file does no
 \examples{
 require(readr)
 require(dplyr)
+setwd(system.file("extdata", package = "FARS"))
 
 dat <- year \%>\%
     make_filename \%>\%

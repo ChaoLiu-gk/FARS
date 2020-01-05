@@ -12,7 +12,8 @@
 #' @seealso \code{\link{fars_read_years}}
 #'
 #' @examples
-#' fars_summarize_year\code{c(2013, 2014, 2015)}
+#' setwd(system.file("extdata", package = "FARS"))
+#' fars_summarize_year(2013:2015)
 #'
 #' @export
 
@@ -23,3 +24,4 @@ fars_summarize_years <- function(years) {
         dplyr::summarize(n = n()) %>%
         tidyr::spread(year, n)
 }
+

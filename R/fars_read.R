@@ -14,6 +14,7 @@
 #' @examples
 #' require(readr)
 #' require(dplyr)
+#' setwd(system.file("extdata", package = "FARS"))
 #'
 #' dat <- year %>%
 #'     make_filename %>%
