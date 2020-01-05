@@ -2,8 +2,8 @@ Package: FARS
 Type: Package
 Title: Summary and Mapping of Fatal Analysis Reporting System (FARS) Data
 Version: 1.0.0
-Author: Chao Liu
-Maintainer: Chao Liu
+Author: Chao Liu <cliu.git@gmail.com>
+Maintainer: Chao Liu <cliu.git@gmail.com>
 Description: Import, summarize and generate maps of accidents from 2013 to 2015 based on
     data from Fatal Analysis Reporting System (FARS)
 License: GPL-3
@@ -21,4 +21,5 @@ Suggests:
     knitr,
     rmarkdown,
     testthat
-VignetteBuilder: knitr
+VignetteBuilder: 
+    knitr
