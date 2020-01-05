@@ -38,7 +38,7 @@ fars_map_state <- function(state.num, year) {
                 message("no accidents to plot")
                 return(invisible(NULL))
         }
-        is.na(data.sub$LONGITUD) <- data.sub$LONGITUD > 900
+        is.na(data.sub$LONGITUD) <- data.sub$LONGITUD > 200
         is.na(data.sub$LATITUDE) <- data.sub$LATITUDE > 90
         with(data.sub, {
                 maps::map("state", ylim = range(LATITUDE, na.rm = TRUE),
