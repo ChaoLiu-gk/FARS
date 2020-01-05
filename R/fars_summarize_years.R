@@ -12,8 +12,7 @@
 #' @seealso \code{\link{fars_read_years}}
 #'
 #' @examples
-#' setwd(system.file("extdata", package = "FARS"))
-#' fars_summarize_year(2013:2015)
+#' fars_summarize_years(2013:2015)
 #'
 #' @export
 
