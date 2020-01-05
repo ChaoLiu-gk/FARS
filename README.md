@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.com/ChaoLiu-gk/FARS.svg?token=Zyq5TzBzz9GPe8gzHV6d&branch=master)](https://travis-ci.com/ChaoLiu-gk/FARS)
+
 # FARS
 
 ## Instructions
